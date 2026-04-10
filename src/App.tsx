@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 // import components
 import Home from "./Components/Home";
