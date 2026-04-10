@@ -4,7 +4,8 @@ import "./index.css";
 import App from "./App.tsx";
 
 // import redux provider
-import Providers from "./features/Provider.tsx";
+// import Providers from "./features/Provider";
+import Providers from "./features/Provider";
 
 createRoot(document.getElementById("root")!).render(
   <Providers>
