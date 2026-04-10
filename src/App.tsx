@@ -1,0 +1,14 @@
+import React from "react";
+
+// import components
+import Home from "./Components/Home";
+
+const App = () => {
+  return (
+    <>
+      <Home />
+    </>
+  );
+};
+
+export default App;
