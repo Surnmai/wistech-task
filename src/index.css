@@ -215,7 +215,7 @@ header a {
     position: absolute;
     top: 0;
     left: -100%;
-    width: 42%;
+    width: 50vw;
     height: 100vh;
     background: #011640;
     z-index: 100;
@@ -232,7 +232,7 @@ header a {
     content: "";
     position: fixed;
     top: 0;
-    left: 42%;
+    left: 50vw;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.7);
@@ -252,7 +252,7 @@ header a {
   }
   header nav .btn {
     display: inline-block;
-    transform: translateX(50%);
+    transform: translateX(30%);
     margin: 4rem 0;
   }
   header nav .btn a {

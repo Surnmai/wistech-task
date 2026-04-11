@@ -115,6 +115,9 @@ const Home = () => {
         {/* Our Services end  */}
       </section>
       {/* Our services ends here  */}
+
+      {/* Why choose Us starts  */}
+      {/* Why Choose Us ends  */}
     </>
   );
 };
