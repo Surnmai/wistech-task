@@ -281,6 +281,73 @@ header {
 }
 // Why choose us ends
 
+// footer starts
+footer {
+  background: #000000;
+  color: $icons-color;
+  .footerDetails {
+    @include grid(15rem);
+    padding: 3rem 0;
+
+    .logoInfo {
+      text-align: center;
+      .logo {
+        color: $icons-color;
+        font-size: 3rem;
+        cursor: pointer;
+        span {
+          color: $hoverColor;
+        }
+      }
+      .content {
+        font-size: 1.5rem;
+      }
+    }
+
+    .contact {
+      h4 {
+        font-size: 3rem;
+        color: $hoverColor;
+      }
+      p {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+      }
+    }
+
+    .socials {
+      align-items: center;
+      h4 {
+        color: $hoverColor;
+        font-size: 3rem;
+      }
+      .icons {
+        font-size: x-large;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        padding: 2rem 0;
+        svg {
+          height: 4rem;
+          width: 4rem;
+          &:hover {
+            background: $hoverColor;
+            color: $bg-color;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    border-top: 0.1rem #fff solid;
+    font-size: 2rem;
+    padding: 2rem 0;
+  }
+}
+
+// footer ends
+
 // media queries
 @media all and (max-width: 991px) {
   html {

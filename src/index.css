@@ -234,6 +234,67 @@ header a {
   letter-spacing: 0.1rem;
 }
 
+footer {
+  background: #000000;
+  color: #05aff2;
+}
+footer .footerDetails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+  padding: 3rem 0;
+}
+footer .footerDetails .logoInfo {
+  text-align: center;
+}
+footer .footerDetails .logoInfo .logo {
+  color: #05aff2;
+  font-size: 3rem;
+  cursor: pointer;
+}
+footer .footerDetails .logoInfo .logo span {
+  color: #00ff9f;
+}
+footer .footerDetails .logoInfo .content {
+  font-size: 1.5rem;
+}
+footer .footerDetails .contact h4 {
+  font-size: 3rem;
+  color: #00ff9f;
+}
+footer .footerDetails .contact p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+footer .footerDetails .socials {
+  align-items: center;
+}
+footer .footerDetails .socials h4 {
+  color: #00ff9f;
+  font-size: 3rem;
+}
+footer .footerDetails .socials .icons {
+  font-size: x-large;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0;
+}
+footer .footerDetails .socials .icons svg {
+  height: 4rem;
+  width: 4rem;
+}
+footer .footerDetails .socials .icons svg:hover {
+  background: #00ff9f;
+  color: #011640;
+}
+footer .copyright {
+  text-align: center;
+  border-top: 0.1rem #fff solid;
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
 @media all and (max-width: 991px) {
   html {
     font-size: 55%;

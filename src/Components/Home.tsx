@@ -4,7 +4,13 @@
 import { navLinks, ourServices } from "../data";
 
 // import React Icons
-import { FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaFacebook,
+  FaLinkedin,
+  FaInstagramSquare,
+} from "react-icons/fa";
 
 // import redux Selector and Dispatch
 import { useSelector, useDispatch } from "react-redux";
@@ -13,6 +19,7 @@ import { toggleMenuBtn } from "../features/navSlice";
 
 // Import images
 import chooseUsImg from "../assets/choose.png";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Home = () => {
   const { menuBar } = useSelector((state: RootState) => state.nav);
@@ -142,6 +149,50 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us ends  */}
+
+      {/* Footer starts  */}
+      <footer>
+        <div className="footerDetails">
+          {/* logo and info  */}
+          <div className="logoInfo">
+            {/* Logo  */}
+            <h4 className="logo">
+              Wis<span>Tech</span>
+            </h4>
+            {/* content  */}
+            <div className="content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              veritatis earum, dolorum culpa nesciunt reiciendis iusto officiis
+              eius necessitatibus, sed eum fuga voluptas vel sunt corporis
+              vitae! Soluta, neque quia.
+            </div>
+          </div>
+
+          {/* Contact Info  */}
+          <div className="contact">
+            <h4>Contact</h4>
+            <p>email: wistech@gmail.com</p>
+            <p>phone: 02444444444</p>
+            <p>location: Spintex-Accra</p>
+          </div>
+
+          {/* Socials  */}
+          <div className="socials">
+            <h4>Socials</h4>
+            <div className="icons">
+              <FaFacebook />
+              <FaSquareXTwitter />
+              <FaLinkedin />
+              <FaInstagramSquare />
+            </div>
+          </div>
+        </div>
+
+        <p className="copyright">
+          &copy; {new Date().getFullYear()} Wistech | By surnmai1@gmail.com
+        </p>
+      </footer>
+      {/* Footer ends  */}
     </>
   );
 };
