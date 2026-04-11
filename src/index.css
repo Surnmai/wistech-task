@@ -150,6 +150,46 @@ header a {
   letter-spacing: 0.1rem;
 }
 
+.services .title {
+  color: #05aff2;
+  font-size: 4rem;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+.services .title span {
+  color: #00ff9f;
+}
+.services .service {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 1.5rem;
+}
+.services .service div {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+.services .service div:hover {
+  box-shadow: 5px 5px 15px 5px #000000;
+  cursor: pointer;
+  color: #011640;
+  background: #00ff9f;
+  transition: all 0.2s linear;
+}
+.services .service div img {
+  height: 20rem;
+  width: 20rem;
+}
+.services .service div h4 {
+  font-size: large;
+  font-weight: bolder;
+  margin: 1rem 0;
+}
+.services .service div p {
+  font-size: small;
+}
+
 @media all and (max-width: 991px) {
   html {
     font-size: 55%;
@@ -177,7 +217,7 @@ header a {
     left: -100%;
     width: 42%;
     height: 100vh;
-    background: red;
+    background: #011640;
     z-index: 100;
     transition: all 0.5s linear;
   }

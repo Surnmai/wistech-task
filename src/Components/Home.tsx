@@ -1,7 +1,7 @@
 // import React from "react";
 
 // import navLinks Data
-import { navLinks } from "../data";
+import { navLinks, ourServices } from "../data";
 
 // import React Icons
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -98,6 +98,21 @@ const Home = () => {
         <h4 className="title">
           Our <span>Services</span>
         </h4>
+
+        {/* Our Services starts */}
+        <div className="service">
+          {ourServices.map((service, index) => {
+            return (
+              <div key={index}>
+                <img src={service?.img} alt={service?.title} />{" "}
+                <h4>{service.title}</h4>
+                <p>{service?.text}</p>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Our Services end  */}
       </section>
       {/* Our services ends here  */}
     </>
