@@ -77,7 +77,23 @@ const Home = () => {
         </a>
       </header>
 
-      <section>Home</section>
+      {/* Hero Section Starts  */}
+      <section className="hero">
+        <div className="content">
+          <h3>Transforming business with cutting edge solutions</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+            incidunt? Dolores sed voluptatum provident, molestiae est, totam
+            tempora eligendi maiores consequuntur voluptatibus suscipit maxime
+            doloremque assumenda quidem voluptates necessitatibus accusantium?
+          </p>
+        </div>
+      </section>
+      {/* Hero Section Ends  */}
+
+      {/* Our services starts here  */}
+      <section className="services"></section>
+      {/* Our services ends here  */}
     </>
   );
 };

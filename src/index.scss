@@ -50,6 +50,10 @@ footer {
 // header styles starts
 header {
   position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   background: $headerBg;
   width: 100%;
   display: flex;
@@ -63,6 +67,7 @@ header {
     align-items: center;
     cursor: pointer;
     position: relative;
+    visibility: 0;
     // justify-content: center;
     // // gap: 0.5rem;
     // font-size: 4rem;
@@ -78,6 +83,7 @@ header {
       background: $headerBg;
       border-radius: 0.5rem;
       color: $icons-color;
+      visibility: hidden;
     }
   }
 
@@ -141,6 +147,50 @@ header {
 }
 // header styles ends
 
+// hero starts
+
+.hero {
+  background: url("./assets/pexels-sejio402-6466141.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .content {
+    transform: translateY(20rem);
+    width: 50%;
+    h3 {
+      color: #fff;
+      font-size: 4rem;
+      font-weight: 900;
+      text-shadow: 0.2rem 0.2rem black;
+      line-height: 1.5;
+      letter-spacing: 0.1rem;
+    }
+    p {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 500;
+      text-shadow: 0.2rem 0.2rem black;
+      line-height: 1.5;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+// hero ends
+
 // media queries
 @media all and (max-width: 991px) {
   html {
@@ -170,20 +220,37 @@ header {
     }
 
     nav {
-      // display: none;
       position: absolute;
       top: 0;
-      left: 0;
+      left: -100%;
       width: 42%;
       height: 100vh;
       background: red;
-      // gap: 0.5rem 0;
-      z-index: 100;
-      display: none;
-      transition: 0.5s ease-in-out;
+      z-index: 1;
+      transition: all 0.5s linear;
       &.active {
-        display: inline-block;
+        left: 0;
+        &::before {
+          opacity: 1;
+          visibility: visible;
+        }
       }
+      &::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 58vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          opacity 0.4s ease-in-out,
+          visibility 0.4s ease-in-out;
+      }
+
       ul {
         display: flex;
         flex-direction: column;
