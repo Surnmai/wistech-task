@@ -433,6 +433,13 @@ footer {
       width: auto;
     }
   }
+  footer {
+    .footerDetails {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
 }
 
 @media all and (max-width: 450px) {
