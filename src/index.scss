@@ -231,6 +231,56 @@ header {
 }
 // services ends
 
+// why choose us starts
+.choose {
+  .title {
+    color: $icons-color;
+    font-size: 4rem;
+    text-align: center;
+    margin: 2.5rem 0;
+    span {
+      color: $hoverColor;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+
+    .image {
+      flex: 1 1 20rem;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .textContent {
+      color: #fff;
+      flex: 1 1 30rem;
+      text-align: justify;
+      h4 {
+        font-size: 4rem;
+        text-align: center;
+        padding: 1.5rem 0;
+        font-weight: 900;
+        text-shadow: 0.2rem 0.2rem black;
+        line-height: 1.5;
+        letter-spacing: 0.1rem;
+      }
+      p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+}
+// Why choose us ends
+
 // media queries
 @media all and (max-width: 991px) {
   html {

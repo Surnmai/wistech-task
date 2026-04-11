@@ -190,6 +190,50 @@ header a {
   font-size: small;
 }
 
+.choose .title {
+  color: #05aff2;
+  font-size: 4rem;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+.choose .title span {
+  color: #00ff9f;
+}
+.choose .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+.choose .content .image {
+  flex: 1 1 20rem;
+}
+.choose .content .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.choose .content .textContent {
+  color: #fff;
+  flex: 1 1 30rem;
+  text-align: justify;
+}
+.choose .content .textContent h4 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-weight: 900;
+  text-shadow: 0.2rem 0.2rem black;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+}
+.choose .content .textContent p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
 @media all and (max-width: 991px) {
   html {
     font-size: 55%;

@@ -11,6 +11,9 @@ import { useSelector, useDispatch } from "react-redux";
 import type { AppDispatch, RootState } from "../features/store";
 import { toggleMenuBtn } from "../features/navSlice";
 
+// Import images
+import chooseUsImg from "../assets/choose.png";
+
 const Home = () => {
   const { menuBar } = useSelector((state: RootState) => state.nav);
   console.log(menuBar);
@@ -117,6 +120,27 @@ const Home = () => {
       {/* Our services ends here  */}
 
       {/* Why choose Us starts  */}
+      {/* Title  */}
+      <section className="choose">
+        <h4 className="title">
+          Why <span>Choose Us!</span>
+        </h4>
+        <div className="content">
+          <div className="image">
+            <img src={chooseUsImg} alt="why-choose us" />
+          </div>
+          <div className="textContent">
+            <h4>Build quick website</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam sed, dignissimos facere itaque eos impedit natus, in
+              quos dolores vel quas ullam. Molestias ab accusamus ex tenetur
+              aliquid est ullam.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us ends  */}
     </>
   );
