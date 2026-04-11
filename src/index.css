@@ -220,11 +220,11 @@ header a {
   text-align: justify;
 }
 .choose .content .textContent h4 {
-  font-size: 4rem;
+  font-size: 6rem;
   text-align: center;
   padding: 1.5rem 0;
   font-weight: 900;
-  text-shadow: 0.2rem 0.2rem black;
+  text-shadow: 1rem 1rem black;
   line-height: 1.5;
   letter-spacing: 0.1rem;
 }
