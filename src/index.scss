@@ -62,20 +62,33 @@ header {
   padding: 2rem 9%;
   box-shadow: $box-shadow;
 
+  // .icons {
+  //   // display: flex;
+  //   // align-items: center;
+  //   cursor: pointer;
+  //   position: relative;
+  //   // visibility: hidden;
+  //   // justify-content: center;
+  //   // // gap: 0.5rem;
+  //   // font-size: 4rem;
+
+  //   #menu-bars {
+  //     display: none;
+  //   }
+
+  //   svg {
+  //     // padding: 1rem;
+  //     height: 4rem;
+  //     width: 4rem;
+  //     background: $headerBg;
+  //     border-radius: 0.5rem;
+  //     color: $icons-color;
+  //   }
+  // }
+
   .icons {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    visibility: 0;
-    // justify-content: center;
-    // // gap: 0.5rem;
-    // font-size: 4rem;
-
-    #menu-bars {
-      display: none;
-    }
-
+    // visibility: hidden;
+    display: none;
     svg {
       // padding: 1rem;
       height: 4rem;
@@ -83,7 +96,6 @@ header {
       background: $headerBg;
       border-radius: 0.5rem;
       color: $icons-color;
-      visibility: hidden;
     }
   }
 
@@ -213,10 +225,16 @@ header {
   }
 
   header {
+    // .icons {
+    //   svg {
+    //     display: inline-block;
+    //   }
+    //   #CloseMenu-bars {
+    //     display: inline-block;
+    //   }
+    // }
     .icons {
-      #menu-bars {
-        display: inline-block;
-      }
+      display: inline-block;
     }
 
     nav {
@@ -226,7 +244,7 @@ header {
       width: 42%;
       height: 100vh;
       background: red;
-      z-index: 1;
+      z-index: 100;
       transition: all 0.5s linear;
       &.active {
         left: 0;
@@ -239,11 +257,11 @@ header {
         content: "";
         position: fixed;
         top: 0;
-        right: 0;
-        width: 58vw;
+        left: 42%;
+        width: 100vw;
         height: 100vh;
         background: rgba(0, 0, 0, 0.7);
-        z-index: -1;
+        z-index: -100;
         opacity: 0;
         visibility: hidden;
         transition:
@@ -270,6 +288,12 @@ header {
           color: #fff;
         }
       }
+    }
+  }
+
+  .hero {
+    .content {
+      width: auto;
     }
   }
 }

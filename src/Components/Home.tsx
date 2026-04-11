@@ -50,7 +50,7 @@ const Home = () => {
               dispatch(toggleMenuBtn());
             }}
           >
-            <FaTimes id="menu-bars" />
+            <FaTimes id="closeMenu-bars" />
           </div>
 
           <ul>
@@ -92,7 +92,13 @@ const Home = () => {
       {/* Hero Section Ends  */}
 
       {/* Our services starts here  */}
-      <section className="services"></section>
+      <section className="services">
+        {/* title  */}
+
+        <h4 className="title">
+          Our <span>Services</span>
+        </h4>
+      </section>
       {/* Our services ends here  */}
     </>
   );

@@ -52,13 +52,6 @@ header {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
 }
 header .icons {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
-  visibility: 0;
-}
-header .icons #menu-bars {
   display: none;
 }
 header .icons svg {
@@ -67,7 +60,6 @@ header .icons svg {
   background: #000;
   border-radius: 0.5rem;
   color: #05aff2;
-  visibility: hidden;
 }
 header .logo {
   color: #05aff2;
@@ -176,7 +168,7 @@ header a {
   html {
     font-size: 50%;
   }
-  header .icons #menu-bars {
+  header .icons {
     display: inline-block;
   }
   header nav {
@@ -186,7 +178,7 @@ header a {
     width: 42%;
     height: 100vh;
     background: red;
-    z-index: 1;
+    z-index: 100;
     transition: all 0.5s linear;
   }
   header nav.active {
@@ -200,11 +192,11 @@ header a {
     content: "";
     position: fixed;
     top: 0;
-    right: 0;
-    width: 58vw;
+    left: 42%;
+    width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.7);
-    z-index: -1;
+    z-index: -100;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
@@ -225,6 +217,9 @@ header a {
   }
   header nav .btn a {
     color: #fff;
+  }
+  .hero .content {
+    width: auto;
   }
 }
 @media all and (max-width: 450px) {
